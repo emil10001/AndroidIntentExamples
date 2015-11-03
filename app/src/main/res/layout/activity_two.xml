@@ -13,4 +13,11 @@
         android:layout_height="48dp"
         android:text="@string/activity_two"/>
 
+    <Button
+        android:id="@+id/launch_intent"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/activity_two_text"
+        android:text="@string/launch_intent"/>
+
 </RelativeLayout>
