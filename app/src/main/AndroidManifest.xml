@@ -11,13 +11,13 @@
         <activity android:name=".ActivityOne" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".ActivityTwo" >
         </activity>
-
+        <service android:name=".MainService">
+        </service>
     </application>
 
 </manifest>

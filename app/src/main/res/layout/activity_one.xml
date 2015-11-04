@@ -14,10 +14,17 @@
         android:text="@string/activity_one"/>
 
     <Button
-        android:id="@+id/launch_intent"
+        android:id="@+id/launch_activity_two"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_below="@id/activity_one_text"
-        android:text="@string/launch_intent"/>
+        android:text="@string/launch_activity"/>
+
+    <Button
+        android:id="@+id/launch_service"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/launch_activity_two"
+        android:text="@string/launch_service"/>
 
 </RelativeLayout>

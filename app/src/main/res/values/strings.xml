@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">IntentExamples</string>
-    <string name="launch_intent">launch intent</string>
+    <string name="launch_activity">launch activity</string>
     <string name="activity_two">activity two</string>
     <string name="activity_one">activity one</string>
+    <string name="launch_service">launch service</string>
 </resources>

@@ -16,7 +16,7 @@ public class ActivityTwo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two);
-        launchIntent = (Button) findViewById(R.id.launch_intent);
+        launchIntent = (Button) findViewById(R.id.launch_activity_two);
         launchIntent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
