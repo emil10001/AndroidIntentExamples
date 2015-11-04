@@ -20,4 +20,11 @@
         android:layout_below="@id/activity_two_text"
         android:text="@string/launch_activity"/>
 
+    <Button
+        android:id="@+id/launch_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/launch_activity_two"
+        android:text="@string/launch_broadcast"/>
+
 </RelativeLayout>

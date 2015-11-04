@@ -18,6 +18,12 @@
         </activity>
         <service android:name=".MainService">
         </service>
+        <receiver android:name=".MainReceiver" >
+            <intent-filter>
+                <action android:name="io.ejf.intentexamples" >
+                </action>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
