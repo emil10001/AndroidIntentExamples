@@ -27,4 +27,11 @@
         android:layout_below="@id/launch_activity_two"
         android:text="@string/launch_service"/>
 
+    <Button
+        android:id="@+id/check_tts_data"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/launch_service"
+        android:text="@string/check_tts_data"/>
+
 </RelativeLayout>

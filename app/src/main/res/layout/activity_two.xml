@@ -27,4 +27,18 @@
         android:layout_below="@id/launch_activity_two"
         android:text="@string/launch_broadcast"/>
 
+    <EditText
+        android:id="@+id/say_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/say_hint"
+        android:layout_below="@id/launch_broadcast"/>
+
+    <Button
+        android:id="@+id/launch_say"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/say_text"
+        android:text="@string/say"/>
+
 </RelativeLayout>

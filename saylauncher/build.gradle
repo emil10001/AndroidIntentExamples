@@ -5,8 +5,8 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "io.ejf.intentexamples"
-        minSdkVersion 21
+        applicationId "io.ejf.saylauncher"
+        minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"

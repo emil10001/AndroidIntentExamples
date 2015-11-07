@@ -18,9 +18,17 @@
         </activity>
         <service android:name=".MainService">
         </service>
+        <service android:name=".say.TtsService">
+        </service>
         <receiver android:name=".MainReceiver" >
             <intent-filter>
                 <action android:name="io.ejf.intentexamples" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".say.TtsReceiver" >
+            <intent-filter>
+                <action android:name="io.ejf.intentexamples.say" >
                 </action>
             </intent-filter>
         </receiver>

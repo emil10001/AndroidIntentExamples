@@ -5,4 +5,7 @@
     <string name="activity_one">activity one</string>
     <string name="launch_service">launch service</string>
     <string name="launch_broadcast">launch broadcsast</string>
+    <string name="check_tts_data">Check TTS Data</string>
+    <string name="say">Say</string>
+    <string name="say_hint">Type something to say.</string>
 </resources>

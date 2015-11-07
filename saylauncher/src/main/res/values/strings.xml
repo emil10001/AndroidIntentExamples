@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SayLauncher</string>
+    <string name="say_hint">Type something to say.</string>
+    <string name="say">Say</string>
+</resources>
