@@ -18,10 +18,13 @@ public class TtsReceiver extends BroadcastReceiver  {
         Log.i(TAG, "received broadcast");
         Intent sIntent = new Intent(context, TtsService.class);
 
-        if (intent.hasExtra(Constants.SAY_TEXT)) {
+        if (Constants.SAY_RECEIVER_ACTION.equals(intent.getAction())
+                && intent.hasExtra(Constants.SAY_TEXT)) {
             sIntent.putExtra(Constants.SAY_TEXT, intent.getStringExtra(Constants.SAY_TEXT));
+            context.startService(sIntent);
+        } else {
+            Log.w(TAG, "received unknown intent");
         }
-        context.startService(sIntent);
     }
 
 }
