@@ -11,22 +11,28 @@
         <activity android:name=".ActivityOne" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".ActivityTwo" >
         </activity>
-        <service android:name=".MainService">
+
+        <service android:name=".MainService" >
         </service>
-        <service android:name=".say.TtsService">
+        <service android:name=".say.TtsService" >
         </service>
+
         <activity android:name=".say.TtsDummyActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
+
         <receiver android:name=".MainReceiver" >
             <intent-filter>
                 <action android:name="io.ejf.intentexamples" >
@@ -39,6 +45,9 @@
                 </action>
             </intent-filter>
         </receiver>
+
+        <activity android:name=".aviary.AviaryLaunch" >
+        </activity>
     </application>
 
 </manifest>

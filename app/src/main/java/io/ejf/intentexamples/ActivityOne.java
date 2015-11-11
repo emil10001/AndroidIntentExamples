@@ -8,12 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import io.ejf.intentexamples.aviary.AviaryLaunch;
+
 public class ActivityOne extends AppCompatActivity {
     private static final int MY_DATA_CHECK_CODE = 3;
     private TextView tv;
     private Button launchActivityButton;
     private Button launchServiceButton;
     private Button checkTtsButton;
+    private Button aviaryButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,7 @@ public class ActivityOne extends AppCompatActivity {
         launchActivityButton = (Button) findViewById(R.id.launch_activity_two);
         launchServiceButton = (Button) findViewById(R.id.launch_service);
         checkTtsButton = (Button) findViewById(R.id.check_tts_data);
+        aviaryButton = (Button) findViewById(R.id.aviary_button);
 
         tv = (TextView) findViewById(R.id.activity_one_text);
 
@@ -45,6 +49,17 @@ public class ActivityOne extends AppCompatActivity {
                 startActivityForResult(checkIntent, MY_DATA_CHECK_CODE);
             }
         });
+        aviaryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                launchAviary();
+            }
+        });
+
+    }
+
+    private void launchAviary() {
+        startActivity(new Intent(this, AviaryLaunch.class));
     }
 
     private void launchService() {

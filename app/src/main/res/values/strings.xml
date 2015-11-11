@@ -8,4 +8,6 @@
     <string name="check_tts_data">Check TTS Data</string>
     <string name="say">Say</string>
     <string name="say_hint">Type something to say.</string>
+    <string name="launch_aviary">launch aviary</string>
+    <string name="aviary_activity">Aviary Activity</string>
 </resources>
