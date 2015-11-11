@@ -16,6 +16,4 @@ The following is the table of contents for the series:
   * Support generic text share
 * Part 4 - coming soon
 
-Here's the YouTube playlist for the videos in the series:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLjGyKRwbBl0sN3LMCks_pACOk7OftwmzH" frameborder="0" allowfullscreen></iframe>
+[Here's a link to the YouTube playlist for the videos in the series.](https://www.youtube.com/playlist?list=PLjGyKRwbBl0sN3LMCks_pACOk7OftwmzH)
