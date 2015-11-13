@@ -4,18 +4,20 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
-import android.util.Log;
+
+import io.ejf.intentexamples.utils.Logger;
 
 /**
  * Created by ejf3 on 11/3/15.
  */
 public class MainService extends Service{
-    private static final String TAG = "MainService";
+    private static final Logger log = new Logger("MainService");
+
     public static boolean serviceRunning = false;
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.i(TAG, "starting service");
+        log.i("starting service");
         serviceRunning = true;
         if (intent.hasExtra("KILL"))
             stopSelf();
@@ -24,7 +26,7 @@ public class MainService extends Service{
 
     @Override
     public void onDestroy(){
-        Log.i(TAG, "stopping service");
+        log.i("stopping service");
         serviceRunning = false;
         super.onDestroy();
     }
