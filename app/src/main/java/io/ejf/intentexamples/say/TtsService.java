@@ -5,17 +5,18 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.speech.tts.TextToSpeech;
 import android.support.annotation.Nullable;
-import android.util.Log;
 
 import java.util.Locale;
 
 import io.ejf.intentexamples.Constants;
+import io.ejf.intentexamples.utils.Logger;
 
 /**
  * Created by ejf3 on 11/7/15.
  */
 public class TtsService extends Service implements TextToSpeech.OnInitListener {
-    private static final String TAG = "TtsService";
+    private static final Logger log = new Logger("TtsService");
+
     public static boolean serviceRunning = false;
     public volatile boolean ttsInitted = false;
     private TextToSpeech mTts;
@@ -23,7 +24,7 @@ public class TtsService extends Service implements TextToSpeech.OnInitListener {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.i(TAG, "starting service");
+        log.i("starting service");
         serviceRunning = true;
         if (intent.hasExtra("KILL"))
             stopSelf();
@@ -41,7 +42,7 @@ public class TtsService extends Service implements TextToSpeech.OnInitListener {
 
     @Override
     public void onDestroy(){
-        Log.i(TAG, "stopping service");
+        log.i("stopping service");
         serviceRunning = false;
         mTts.shutdown();
         super.onDestroy();
@@ -55,7 +56,7 @@ public class TtsService extends Service implements TextToSpeech.OnInitListener {
 
     @Override
     public void onInit(int status) {
-        Log.i(TAG, "onInit " + status);
+        log.i("onInit " + status);
         if (status == TextToSpeech.SUCCESS) {
             ttsInitted = true;
             mTts.setLanguage(Locale.US);

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FinanceManagerDemo</string>
+    <string name="get_stock_info">Get Stock Info</string>
+</resources>

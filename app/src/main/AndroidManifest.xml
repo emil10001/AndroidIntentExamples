@@ -49,6 +49,14 @@
             </intent-filter>
         </receiver>
 
+        <activity android:name=".stocky.StockyActivity" >
+            <intent-filter>
+                <action android:name="io.ejf.intentexamples.stocky" >
+                </action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".aviary.AviaryLaunch" >
         </activity>
     </application>

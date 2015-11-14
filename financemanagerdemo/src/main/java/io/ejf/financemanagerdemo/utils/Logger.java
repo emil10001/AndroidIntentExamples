@@ -1,4 +1,4 @@
-package io.ejf.intentexamples.utils;
+package io.ejf.financemanagerdemo.utils;
 
 import android.util.Log;
 

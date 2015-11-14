@@ -10,4 +10,11 @@ public class Constants {
     public static final String MAIN_RECEIVER_ACTION = "io.ejf.intentexamples";
 
     public static final String EXTRA_CONTENT = "EXTRA_CONTENT";
+
+    // stock demo
+    public static final String STOCKY_RECEIVER_ACTION = "io.ejf.intentexamples.stocky";
+    public static final String CLIENT_ID = "CLIENT_ID";
+    public static final String CLIENT_SECRET = "CLIENT_SECRET";
+    public static final String VALUE = "VALUE";
+    public static final String INVESTED = "INVESTED";
 }

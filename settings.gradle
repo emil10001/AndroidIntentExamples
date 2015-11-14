@@ -1,1 +1,1 @@
-include ':app', ':saylauncher'
+include ':app', ':saylauncher', ':financemanagerdemo'

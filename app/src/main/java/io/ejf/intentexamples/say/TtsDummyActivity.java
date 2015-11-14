@@ -3,15 +3,15 @@ package io.ejf.intentexamples.say;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 
 import io.ejf.intentexamples.Constants;
+import io.ejf.intentexamples.utils.Logger;
 
 /**
  * Created by ejf3 on 11/8/15.
  */
 public class TtsDummyActivity extends Activity {
-    private static final String TAG = "TtsDummyActivity";
+    private static final Logger log = new Logger("TtsDummyActivity");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class TtsDummyActivity extends Activity {
             sIntent.putExtra(Constants.SAY_TEXT, intent.getStringExtra(Intent.EXTRA_TEXT));
             startService(sIntent);
         } else {
-            Log.w(TAG, "received unknown intent");
+            log.w("received unknown intent");
         }
 
         finish();
